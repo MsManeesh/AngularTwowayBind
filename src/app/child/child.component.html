@@ -1,0 +1,10 @@
+<p>child works!</p>
+ from  parent component-- Name= <b>{{info}}</b>  age= <b>{{age}}</b> 
+ <div *ngFor="let x of array">
+     <div>{{x.name}}  {{x.age}}</div>
+ </div>
+ <br>
+ <input type="text" [(ngModel)]="variable"  class="form-control" placeholder="input field in child class" [value]="value1" (click)=firstClick.emit()>
+ <button (click)="click()" class="btn-primary">click</button>
+ <br>
+ 

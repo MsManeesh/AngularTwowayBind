@@ -1,0 +1,23 @@
+<p>second works!</p>
+<table class="table-sm" style="width: 40%">
+    <thead>
+        <tr>
+            <th>NAME</th>
+            <th>Gender</th>
+            <th>Status</th>
+            <th>Salary</th>
+            <th>Data Of Birth</th>
+            <th>Name length</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let n of list1">
+            <td scope="row">{{n.name | nameTitle:n.gender:n.status}}</td>
+            <td>{{n.gender |uppercase}}</td>
+            <td>{{n.status}}</td>
+            <td>{{n.salary |currency:'INR'}}</td>
+            <td>{{n.dob|date:'d/mm/y'}}</td>
+            <td>{{n.name|nameLength}}</td>
+        </tr>
+    </tbody>
+</table>
